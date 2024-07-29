@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+input::placeholder {
+    color: #000000; /* Replace with your desired color code or color name */
+    font-weight: lighter
+    ;
+}
+/* Style the header and navbar */
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1px; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    alignz
+    max-width: 1200px;
+    
+    padding: 0 20px;
+}
+
+/* Style the left section of the navbar */
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.website-name {
+    text-decoration: none;
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+    margin-right: 20px;
+    padding: 12px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    font-size: 2%;
+    cursor: pointer;
+    padding: 0;
+}
+
+.dropdown-content {
+    align-items: center;
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 220px;
+    z-index: 5;
+}
+
+.dropdown-content a {
+    color: #000000;
+    padding: 15% 12% ;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    font-style:normal;
+    font-weight: 400;
+    line-height: 100%; /* 21.477px */
+    letter-spacing: 2.148px;
+}
+
+.dropdown-content a:hover {
+    background-color: #050a24;
+    color: #ffffff;
+}
+
+/* Style the right section of the navbar */
+.right-section .logout {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.right-section .logout:hover {
+    color: #ff6600; /* Change color on hover */
+}
+
+.tracking-container {
+    width: 1200px;
+    height:600px;
+    margin-top: 20px;
+    
+    margin-left: 270px;
+    color: #ffffff;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.066);
+    /* background-color: #fff; */
+    border: 2px solid #ffffff;
+    
+    border-radius: 25px;
+}
+.tracking-input {
+    width: 30%;
+    padding: 11px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.track-button {
+    background-color: #007BFF;
+    color: #fff;
+    
+    padding: 10px 35px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* Add this CSS to your stylesheet (track.css or any other) */
+
+/* Style the complaint details container */
+.complaint-container {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+/* Style the complaint details header */
+.complaint-header {
+    margin-top: 35px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffbf00;
+    margin-bottom: 10px;
+}
+
+/* Style individual complaint information */
+.complaint-info {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+
+/* Label for complaint details */
+.complaint-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Value for complaint details */
+.complaint-value {
+    font-size: 18px;
+    color: #20ffe5;
+    flex: 1; /* To make the value span take up the remaining space */
+}
+
+/* Add spacing between complaint details */
+.complaint-info:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+/* Add animation to the complaint details */
+.tracking-results-animate {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+

@@ -1,0 +1,161 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header and navbar */
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1px; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align
+    max-width: 1200px;
+    
+    padding: 0 20px;
+}
+
+/* Style the left section of the navbar */
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.website-name {
+    text-decoration: none;
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+    margin-right: 20px;
+    padding: 12px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    font-size: 2%;
+    cursor: pointer;
+    padding: 0;
+}
+
+.dropdown-content {
+    align-items: center;
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 220px;
+    z-index: 5;
+}
+
+.dropdown-content a {
+    color: #000000;
+    padding: 15% 12% ;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    font-style:normal;
+    font-weight: 400;
+    line-height: 100%; /* 21.477px */
+    letter-spacing: 2.148px;
+}
+
+.dropdown-content a:hover {
+    background-color: #050a24;
+    color: #ffffff;
+}
+
+/* Style the right section of the navbar */
+.right-section .logout {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.right-section .logout:hover {
+    color: #ff6600; /* Change color on hover */
+}
+
+
+
+.slideshow-container {
+    margin-top: 40px;
+    margin-left: 280px;
+    width: 100%;
+    max-width: 1200px; /* Adjust the width as needed */
+    height: 450px; /* Adjust the height as needed */
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+/* Styles for slideshow images */
+.mySlides {
+    display: none;
+    width: 90%;
+}
+
+/* Optional: Add some styles for fading effect */
+.fade {
+    animation-name: fade;
+    animation-duration: 9s; /* Change this duration to control the slide interval */
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+/* Custom CSS for the buttons */
+.big-button {
+    width: 230px;
+    height: 150px;
+    background-color: #1b33ac4b; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 10px;
+    margin: 5px; /* Spacing between buttons */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 17%;
+    margin-top: 5%;
+
+    float:left;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    transition: background-color 5.3s ease;
+}
+
+.big-button:hover {
+    background-color:white; /* Hover background color */
+}
+
+/* Additional styling for button labels */
+.big-button a {
+    color: #ffffff; /* Button text color */
+    text-decoration: none;
+}
+
+/* Hover effect for button labels */
+.big-button:hover a {
+    text-decoration: underline; /* Underline on hover */
+}
+.big-button:hover a {
+    color: #000000; /* Button text color */
+    text-decoration: none;
+}

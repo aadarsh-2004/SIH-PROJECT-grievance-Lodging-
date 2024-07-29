@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="left-section">
+        <h1>NAYAK</h1>
+    </div>
+
+<!-- ----------------------------------------------- -->
+    <div class="right-section">
+        <form id="profileForm" action="/submit-profile" method="post">
+        
+            <div class="profile-box">
+            <h2>---------- Profile Details ----------</h2> 
+                
+            <input type="text" name="first_Name" class="input" placeholder="First_Name">
+            <input type="text" name="last_Name" class="input" placeholder="Last_Name"><br>
+            <input type="email" name="email" class="input" placeholder="Email" ><br>
+            <input type="Password" name="user_pass" class="input" placeholder="Password"><br>
+            <input type="date" name="dob" class="input" placeholder="Date of Birth"><br>
+            <input type="number" name="phone" class="input" placeholder="Phone"><br>
+            
+            <select class="input" name="gender">
+                <option value="" selected disabled>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+
+            <input type="text" name="address" class="address" placeholder="Address">
+            <br>
+            
+            <select class="id" name="idType">
+                <option value="" >Select Identification Type</option>
+                <option value="aadhar">Aadhar Card</option>
+                <option value="passport">Passport</option>
+                <option value="driver_license">Driver's License</option>
+                <option value="national_id">National ID</option>
+            </select><br>
+            
+            <input type="text" name="proofNo" class="proof" placeholder="ID Proof"><br>
+
+            <button class="next" type="submit">Next </button>
+        
+        </form>
+    </div>
+    
+</body>
+</html>

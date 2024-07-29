@@ -1,0 +1,64 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="track.css"> 
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <title>Dashboard</title>
+
+    </head>
+    <body bgcolor="#050a24">
+        <header>
+            <nav>
+                <div class="left-section">
+                    
+                    <div class="dropdown">
+                        <button  id="dropdownButton" class="dropbtn"><img src="drop nav.jpg" alt="" width="40px"></button>
+                        <div id="dropdownContent" class="dropdown-content">
+                            <a href="dashboard.html">Dashboard</a>
+                            <a href="track.html">Track Complaints</a>
+                            <a href="nordal_officers.html">Nordal Officers</a>
+                            <a href="#">Departments</a>
+                            <a href="#">News/Articles</a>
+                            <a href="grievance.html">Grievance</a>
+                            <a href="#">Settings</a>    
+                            <h4>Logged in as : </h4>
+                            <h3>User Id : 22ETCCS001</h3>
+
+                        </div>
+                    </div>
+                    <a href="#" class="website-name">Nayak</a>
+                </div>
+                <div class="right-section">
+                    <a href="#" class="logout"><img src="logout button.png" alt=""></a>
+                </div>
+            </nav>
+        </header>
+
+        <div class="tracking-container">
+            <h1>Track Your Complaint</h1>
+            
+
+            <form>
+                <label for="trackingNumber">Tracking Number   :  </label>
+                <input type="text" id="trackingNumber" name="trackingNumber" class="tracking-input" placeholder="Enter Tracking Number">
+
+                <label for="emailOrMobile">Email /Mobile No.:</label>
+                <input type="text" id="emailOrMobile" name="emailOrMobile" class="tracking-input" placeholder="Enter Email or Mobile Number">
+
+                <button type="button" class="track-button">Track</button>
+            </form>
+
+            <div class="tracking-results">
+                <!-- Display tracking results here (JavaScript will be needed) -->
+            </div>
+        </div>
+
+
+
+        <script src="dashboard.js"></script>
+        <script src="track.js"></script>
+    </body>
+    </html>

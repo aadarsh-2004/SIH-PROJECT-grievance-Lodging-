@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body bgcolor="#050a24">
+    <header>
+        <nav>
+            <div class="left-section">
+                
+                <div class="dropdown">
+                    <button  id="dropdownButton" class="dropbtn"><img src="public/drop nav.jpg" alt="" width="40px"></button>
+                    <div id="dropdownContent" class="dropdown-content">
+                        <a href="#" style="color: white; background-color: #050a24;">Dashboard</a>
+                        <a href="public/track.html">Track Complaints</a>
+                        <a href="#">Nordal Officers</a>
+                        <a href="#">Departments</a>
+                        <a href="#">News/Articles</a>
+                        <a href="grievance.html">Grievance</a>
+                        <a href="#">Settings</a>
+                        <h4>Logged in as : </h54>
+                        <h3>User Id : 22ETCCS001</h5>
+
+                    </div>
+                </div>
+                <a href="#" class="website-name">Nayak</a>
+            </div>
+            <div class="right-section">
+                <a href="#" class="logout"><img src="public/logout button.png" alt=""></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CHAT BOT ------------------------------------------------------------>    
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+    chat-icon="https:&#x2F;&#x2F;encrypted-tbn1.gstatic.com&#x2F;images?q=tbn:ANd9GcSULhlzOoFN_yYO1mUT3L1OJpqvHfM7H54JBHrxc6PebtRRZpQj"
+    intent="WELCOME"
+    chat-title="NAYOT.online"
+    agent-id="c579f3f1-c581-4dc6-a818-a0733577af25"
+    language-code="en"
+    ></df-messenger>
+
+    <style>
+        df-messenger {
+         --df-messenger-bot-message: #c3c3c3;
+         --df-messenger-button-titlebar-color: #31beff;
+         --df-messenger-chat-background-color: #fafafa;
+         --df-messenger-font-color: rgb(0, 0, 0);
+         --df-messenger-send-icon: #31beff;
+         --df-messenger-user-message: #31beff;
+        }
+    </style>
+
+    <!-- SLIDE SHOW  ------------------------------------------------------------>
+    <div class="slideshow-container">
+        <!-- Slides -->
+        <div class="mySlides fade">
+            <img src="public/first page.jpg" alt="Image 1" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="public/second page.jpg" alt="Image 2" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="public/third page.jpg" alt="Image 3" style="width: 100%;">
+        </div>
+    </div>
+    
+
+
+    <script src="public/dashboard.js"></script>
+</body>
+</html>
